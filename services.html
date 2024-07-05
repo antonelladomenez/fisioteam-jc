@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FisioTeam</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="about.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg nav-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo.png"
+              alt="FisioTeam Logo"
+              class="d-inline-block"
+              height="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler custom-toggler toggler-white my-3"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="responsive-navbar-nav"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#location-contact"
+                  >Location/Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="redirectToGift()">Gift Cards</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-primary ml-2 book-now rounded-pill"
+              onclick="redirectToBooking()"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="services" class="services-section">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 mb-4 d-flex justify-content-center">
+            <div class="card-service">
+              <div class="card-body text-left">
+                <h2>Massage</h2>
+                <ul>
+                  <li>
+                    <strong>Relaxing massages:</strong> I offer personalized
+                    relaxing massages designed to release tension in your body
+                    and mind. Using gentle and effective techniques, each
+                    session is tailored to your needs, providing deep relief
+                    from stress and fatigue for a rejuvenating and restorative
+                    experience. Discover the healing power of human touch and
+                    book your appointment today for a journey towards calm and
+                    renewal.
+                  </li>
+                  <li>
+                    <strong>Sports massages:</strong> I specialize in
+                    personalized sports massages tailored to your specific
+                    needs, whether enhancing athletic performance or relieving
+                    sports-related injuries and muscle tension. My targeted
+                    techniques optimize recovery and improve mobility, focusing
+                    on areas of concern to help you achieve your fitness goals
+                    and maintain peak physical condition. Book a session today
+                    to experience the benefits of sports massage.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 d-flex justify-content-center">
+            <div class="card-service">
+              <img
+                style="
+                  width: 392px;
+                  height: 462px;
+                  position: relative;
+                  border-radius: 16px;
+                "
+                src="images/masajes 3.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="stretching" class="services-section">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-6 mb-4 d-flex justify-content-center order-1 order-md-2">
+            <div class="card-service">
+              <div class="card-body text-left">
+                <h2>Stretching</h2>
+                <ul>
+                  <li>
+                    <strong>Personalized Stretching Session</strong> I offer
+                    personalized relaxing massages designed to release tension
+                    in your body and mind. Using gentle and effective
+                    techniques, each session is tailored to your needs,
+                    providing deep relief from stress and fatigue for a
+                    rejuvenating and restorative experience. Discover the
+                    healing power of human touch and book your appointment today
+                    for a journey towards calm and renewal.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 d-flex justify-content-center order-2 order-md-1">
+            <div class="card-service">
+              <img
+                style="
+                  width: 392px;
+                  height: 462px;
+                  position: relative;
+                  border-radius: 16px;
+                "
+                src="images/masajes 3.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-left mb-3">
+            <img
+              src="images/logo.png"
+              alt="FisioTeam Logo"
+              class="d-inline-block"
+              height="100"
+            />
+          </div>
+          <div class="col-md-4 text-center text-md-left mb-1 quick-links">
+            <h5>Quick Links</h5>
+            <a class="linksFast" href="index.html">Home</a>
+            <a class="linksFast" href="about.html">About</a>
+
+            <a class="linksFast" href="services.html">Services</a>
+
+            <a class="linksFast" onclick="redirectToGift()">Gift Cards</a>
+          </div>
+          <div class="col-md-4 text-center text-md-left mb-3 social-icons">
+            <h5>Follow Us</h5>
+            <a
+            href="mailto:juancruz_augusto@hotmail.com"
+            class="fas fa-envelope pr-4"
+            ></a>
+            <a
+              href="https://www.facebook.com/juancruz.augusto/"
+              class="fab fa-facebook-f"
+            ></a>
+            <a
+              href="https://www.instagram.com/jcaugustoo/"
+              class="fab fa-instagram pl-4"
+            ></a>
+          </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="row">
+          <div class="col-12 text-center p-2">
+            <p style="margin-bottom: 0px; font-size: 12px">
+              &copy; 2024 FisioTeam. All rights reserved. | By
+              <a href="https://www.fancyitsolutions.com">FancyIT Solutions</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FisioTeam</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg nav-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="images/logo.png"
+              alt="FisioTeam Logo"
+              class="d-inline-block"
+              height="100"
+            />
+          </a>
+          <button
+            class="navbar-toggler custom-toggler toggler-white my-3"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarNav"
+            aria-controls="responsive-navbar-nav"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#location-contact"
+                  >Location/Contact</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" onclick="redirectToGift()">Gift Cards</a>
+              </li>
+            </ul>
+            <button
+              class="btn btn-primary ml-2 book-now rounded-pill"
+              onclick="redirectToBooking()"
+            >
+              Book Now
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section id="booking" class="text-center">
+      <div class="container my-5">
+        <h1>Stretching and Massages</h1>
+        <button
+          class="btn btn-primary mt-3 book-now rounded-pill button-green"
+          onclick="redirectToBooking()"
+        >
+          Book Now
+        </button>
+      </div>
+    </section>
+
+    <section id="services" class="services-section">
+      <div class="container">
+        <h3 class="mb-5">Services</h3>
+        <div class="row">
+          <div class="col-md-6 mb-4 d-flex justify-content-center">
+            <div class="card-service">
+              <img
+                style="
+                  width: 392px;
+                  height: 462px;
+                  position: relative;
+                  border-radius: 16px;
+                "
+                src="images/masajes 1.jpg"
+              />
+
+              <div class="card-body text-center">
+                <h3>Stretching</h3>
+                <p>
+                  Increase flexibility, reduce tension. Experience the benefits
+                  of our stretching sessions today
+                </p>
+                <a
+                  class="btn btn-primary book-now rounded-pill button-green"
+                  href="services.html#stretching"
+                >
+                  More
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 d-flex justify-content-center">
+            <div class="card-service">
+              <img
+                style="
+                  width: 392px;
+                  height: 462px;
+                  position: relative;
+                  border-radius: 16px;
+                "
+                src="images/jc1.jpg"
+              />
+
+              <div class="card-body text-center">
+                <h3>Massage</h3>
+                <p>
+                  Renew your body and mind with our personalized massages.
+                  Experience total relaxation today!
+                </p>
+                <a
+                  class="btn btn-primary book-now rounded-pill button-green"
+                  href="services.html"
+                >
+                  More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <div class="container">
+        <h2 class="text-center mb-4">Testimonials</h2>
+        <p class="text-center">
+          Don't believe us? Here's what our customers have to say on Google.
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>
+                    "Thanks JC for always being proactive and for the follow ups
+                    after every session. My back feels better and you even
+                    helped me with my sinus!."
+                  </p>
+                  <div class="blockquote-div namesTestimonials">Ian</div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>
+                    "I went to Fisioteam because of my back pain and within the
+                    first session Juan managed to relieved it for me
+                    fantastically. Best massagist in Bondi."
+                  </p>
+                  <div class="blockquote-div namesTestimonials">Agostina</div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4">
+              <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                  <p>
+                    "Highly recommended, amazing professional with high
+                    knowledge and very talkative 10/10."
+                  </p>
+                  <div class="blockquote-div namesTestimonials">Aaron</div>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location-contact">
+      <div class="container container-custom">
+        <div class="row">
+          <div class="col-md-6 mb-3">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.468619618606!2d151.2706738156106!3d-33.891634230629836!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12adf4d1dd1f29%3A0x12d79c207f9fbd5c!2s318%20Bondi%20Rd%2C%20Bondi%20NSW%202026%2C%20Australia!5e0!3m2!1ses!2sar!4v1689102610584!5m2!1ses!2sar"
+              width="100%"
+              height="250"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+          <div class="col-md-6">
+            <h2 class="my-3">LOCATION - CONTACT - HOURS</h2>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="details">
+                  <p><strong>FisioTeam</strong></p>
+                  <p>Unit 11 318 Bondi Rd</p>
+                  <p>Bondi, New South Wales 2026</p>
+                  <p><a href="tel:0438481910">0438 481 910</a></p>
+                  <p>
+                    <a href="mailto:juancruz_augusto@hotmail.com"
+                      >juancruz_augusto@hotmail.com</a
+                    >
+                  </p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="hours">
+                  <p><strong>Monday</strong> 8:00 am - 7:00 pm</p>
+                  <p><strong>Tuesday</strong> 8:00 am - 7:00 pm</p>
+                  <p><strong>Wednesday</strong> 8:00 am - 7:00 pm</p>
+                  <p><strong>Thursday</strong> 8:00 am - 7:00 pm</p>
+                  <p><strong>Friday</strong> 8:00 am - 7:00 pm</p>
+                  <p><strong>Saturday</strong> 9:00 am - 2:00 pm</p>
+                  <p><strong>Sunday</strong> 12:00 pm - 3:00 pm</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center text-md-left mb-3">
+            <img
+              src="images/background-image.jpg"
+              alt="FisioTeam Logo"
+              class="d-inline-block"
+              height="200"
+            />
+          </div>
+          <div class="col-md-4 text-center text-md-left mb-1 quick-links">
+            <h5>Quick Links</h5>
+            <a class="linksFast" href="index.html">Home</a>
+            <a class="linksFast" href="about.html">About</a>
+
+            <a class="linksFast" href="services.html">Services</a>
+
+            <a class="linksFast" onclick="redirectToGift()">Gift Cards</a>
+          </div>
+          <div class="col-md-4 text-center text-md-left mb-3 social-icons">
+            <h5>Follow Us</h5>
+            <a
+              href="mailto:juancruz_augusto@hotmail.com"
+              class="fas fa-envelope pr-4"
+            ></a>
+            <a
+              href="https://www.facebook.com/juancruz.augusto/"
+              class="fab fa-facebook-f"
+            ></a>
+            <a
+              href="https://www.instagram.com/jcaugustoo/"
+              class="fab fa-instagram pl-4"
+            ></a>
+          </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="row">
+          <div class="col-12 text-center p-2">
+            <p style="margin-bottom: 0px; font-size: 12px">
+              &copy; 2024 FisioTeam. All rights reserved. | By
+              <a href="https://www.fancyitsolutions.com">FancyIT Solutions</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

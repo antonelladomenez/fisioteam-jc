@@ -1,0 +1,228 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+header {
+    background-color: #04757c;
+    padding: 10px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    /* Allow wrapping in small screens */
+    background-color: #04757c;
+
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    /* Allow wrapping in small screens */
+}
+
+nav ul li {
+    margin-right: 50px;
+    position: relative;
+    /* Add this line for the hover effect to work properly */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    /* Add this line for padding */
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: white;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+nav .navbar-nav .nav-link {
+    color: white;
+    font-family: 'Inter', sans-serif;
+
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.25s ease-out;
+}
+
+nav .navbar-nav .nav-link:hover {
+    color: white;
+    /* Change to white on hover */
+}
+
+.book-now {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.book-now:hover {
+    background-color: white;
+    color: #04757c;
+    border-color: #04757c;
+}
+
+.toggler-white {
+    border-color: white;
+    /* Cambia el color del borde del botón toggler */
+}
+
+.toggler-white .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(255, 255, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+
+.services-section {
+    background-image: url('images/fisioWhiteBackground.png');
+    /* Usar una URL de imagen externa para prueba */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #04757c;
+}
+
+.horizontal-line {
+    background-color: #ffffff;
+    height: 1px;
+    /* Ajusta la altura de la línea según tus necesidades */
+    width: 100%;
+}
+
+footer {
+    background-color:  #04757c;
+    color: white;
+}
+
+footer .linksFast {
+    margin-bottom: 0;
+}
+
+.footer .social-icons a {
+    color: #ffffff;
+    margin: 0 0;
+    font-size: 20px;
+}
+
+.footer .quick-links a {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    nav ul li a {
+        width: 100%;
+    }
+
+    nav .book-now {
+        margin-top: 10px;
+    }
+
+    section#home h1 {
+        font-size: 2em;
+    }
+
+    .service {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .photosStyle {
+        width: 100%;
+        height: 492px;
+    }
+}
+
+@media (max-width: 700px) {
+
+    /* Asegurarse que los estilos se aplican en pantallas pequeñas */
+    .navbar {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .navbar-toggler {
+        order: 1;
+        /* Asegura que el toggler se muestra al final en pantallas pequeñas */
+    }
+
+    .navbar-brand {
+        order: 0;
+        /* Asegura que el logo se muestra primero en pantallas pequeñas */
+    }
+
+    .navbar-nav {
+        text-align: center;
+        /* Centra el texto */
+        flex-direction: column;
+        /* Alinea los enlaces en columna */
+        width: 100%;
+        /* Ocupa todo el ancho del contenedor */
+    }
+
+    .navbar-collapse {
+        justify-content: center;
+        /* Centra el contenido de la barra de navegación */
+
+    }
+
+    .book-now {
+        margin-top: 1rem;
+        /* Agrega margen superior al botón */
+        width: 100%;
+        /* Ocupa todo el ancho del contenedor */
+    }
+}
