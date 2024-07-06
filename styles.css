@@ -144,12 +144,13 @@ section {
 }
 
 section#booking {
-    background-image: url('images/Img.png');
+    background-image: url('images/background-image.jpg');
     /* Usar una URL de imagen externa para prueba */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: #04757c;
+    padding: 80px 0;
 }
 
 section#testimonials {
@@ -330,4 +331,81 @@ footer .linksFast {
         width: 100%;
         /* Ocupa todo el ancho del contenedor */
     }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slide-in-bottom {
+    animation: slideInFromBottom 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromBelow {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slide-in-below {
+    opacity: 0;
+    /* Para ocultar el elemento inicialmente */
+    transform: translateY(100%);
+    transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+.slide-in-below.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.slide-in-left,
+.slide-in-right {
+    opacity: 0;
+    /* Para ocultar los elementos inicialmente */
+    transition: transform 2s ease-out, opacity 1s ease-out;
+}
+
+.slide-in-left {
+    transform: translateX(-10%);
+}
+
+.slide-in-right {
+    transform: translateX(10%);
+}
+
+.slide-in-left.active,
+.slide-in-right.active {
+    opacity: 1;
+    transform: translateX(0);
 }

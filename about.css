@@ -121,7 +121,7 @@ nav .navbar-nav .nav-link:hover {
 }
 
 footer {
-    background-color:  #04757c;
+    background-color: #04757c;
     color: white;
 }
 
@@ -225,4 +225,71 @@ footer .linksFast {
         width: 100%;
         /* Ocupa todo el ancho del contenedor */
     }
+}
+
+@keyframes slideInFromBottom {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+.slide-in-bottom {
+    animation: slideInFromBottom 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.slide-in-left {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.slide-in-right {
+    animation: slideInFromRight 1s ease-out;
+}
+
+/*with scrpit */
+
+
+.slide-in-left-script,
+.slide-in-right-script {
+    opacity: 0;
+    /* Para ocultar los elementos inicialmente */
+    transition: transform 2s ease-out, opacity 1s ease-out;
+}
+
+.slide-in-left-script {
+    transform: translateX(-10%);
+}
+
+.slide-in-right-script {
+    transform: translateX(10%);
+}
+
+.slide-in-left-script.active,
+.slide-in-right-script.active {
+    opacity: 1;
+    transform: translateX(0);
 }
